@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client-dev": "npx webpack --watch",
+    "server-dev": "npx nodemon --watch server server/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,8 +23,10 @@
     "@babel/preset-react": "^7.18.6",
     "axios": "^0.27.2",
     "babel-loader": "^8.2.5",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.5.0",
+    "mysql2": "^2.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "webpack": "^5.74.0",
